@@ -37,3 +37,8 @@ s4 = "Duong dan: C:\\Python\\data"
 s5 = r"Duong dan raw: C:\Python\data"
 s6 = "Toi ten la \"Nam\", con ban ten gi?"
 print(s1); print(s2); print(s3); print(s4); print(s5); print(s6)
+#s4 dùng chuỗi bình thường: C:\\Python\\data. Trong chuỗi thường, \\ được hiểu là một dấu \. Vì vậy khi in ra sẽ là C:\Python\data.
+#s5 dùng raw string với tiền tố r: r"C:\Python\data". Raw string giữ nguyên các dấu \, không xử lý chúng như ký tự escape thông thường.
+#Raw string thường dùng khi:
+#Viết đường dẫn Windows: r"C:\Python\data"
+#Viết biểu thức chính quy (regex), vì regex sử dụng rất nhiều dấu \
