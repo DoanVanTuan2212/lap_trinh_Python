@@ -34,3 +34,8 @@ for sv in sap_xep_theo_diem:
 print("--- Giam dan ---")
 for sv in sap_xep_giam_dan:
  print(sv["ten"], "-", sv["diem"])
+#Cách đặt điểm trước tên trong tuple dựa vào vị trí của phần tử để Python tự sắp xếp,
+# nên dữ liệu phải được tổ chức theo đúng thứ tự mong muốn. 
+# Trong khi đó, key=lambda cho phép chỉ định trực tiếp tiêu chí cần sắp xếp, 
+# ví dụ lambda sv: sv[1] để sắp xếp theo điểm hoặc lambda sv: sv[0] để sắp xếp theo tên. 
+# Vì vậy, key=lambda linh hoạt hơn và không cần thay đổi cấu trúc dữ liệu.
